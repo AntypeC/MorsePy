@@ -14,7 +14,7 @@ translate_dict = {'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..',
 					'6': '-....', '7': '--...', '8': '---..', '9': '----.', 
 					" ": "/"}
 
-message = "This is just a message"
+message = "Hello World"
 message = " ".join(translate_dict[c] for c in message.upper())
 
 print(message)
@@ -40,7 +40,7 @@ def play_morse_code(message):
 			print("Invalid character detected!") 
 
 print(message)
-# play_morse_code(message)
+play_morse_code(message)
 
 reverse_dict = {v: k for k, v in translate_dict.items()}
 reverse_message = "".join(reverse_dict[c] for c in message.split(" "))
